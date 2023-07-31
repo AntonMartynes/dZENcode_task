@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/dZENcode_task/static/css/main.ffbe9661.css",
-    "main.js": "/dZENcode_task/static/js/main.04d146b9.js",
+    "main.css": "/dZENcode_task/static/css/main.45483ede.css",
+    "main.js": "/dZENcode_task/static/js/main.321922f3.js",
+    "static/media/avatar.jpg": "/dZENcode_task/static/media/avatar.4c574af3bc574bbca3c4.jpg",
     "static/media/logo.png": "/dZENcode_task/static/media/logo.d6793adbb82ac4d03a78.png",
     "static/media/clock.png": "/dZENcode_task/static/media/clock.fa1af63f206b25683e98.png",
+    "static/media/settings.png": "/dZENcode_task/static/media/settings.fd9cb79a2028b66f67eb.png",
     "index.html": "/dZENcode_task/index.html",
-    "main.ffbe9661.css.map": "/dZENcode_task/static/css/main.ffbe9661.css.map",
-    "main.04d146b9.js.map": "/dZENcode_task/static/js/main.04d146b9.js.map"
+    "main.45483ede.css.map": "/dZENcode_task/static/css/main.45483ede.css.map",
+    "main.321922f3.js.map": "/dZENcode_task/static/js/main.321922f3.js.map"
   },
   "entrypoints": [
-    "static/css/main.ffbe9661.css",
-    "static/js/main.04d146b9.js"
+    "static/css/main.45483ede.css",
+    "static/js/main.321922f3.js"
   ]
 }
