@@ -1,0 +1,25 @@
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+
+  font-weight: 300;
+
+  &__item {
+    display: flex;
+    gap: 10px;
+
+    font-size: 15px;
+
+    &__clockIcon {
+      margin: auto;
+      
+      height: 15px;
+      width: 15px;
+      
+      background-image: url('../../images/clock.png');
+      background-size: cover;
+    }
+  }
+}

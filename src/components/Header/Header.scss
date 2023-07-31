@@ -1,0 +1,33 @@
+.header {
+  background: #f8f7f7;
+  box-shadow: 0 10px 23px -3px #e8ecee;
+
+  &__container {
+    margin: 0 auto;
+    /* max-width: 1000px; */
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+  }
+}
+
+.seqrch-input {
+  width: 300px;
+  height: 30px;
+  border: 1px solid #e8ecee;
+  background: #f0f3f5;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 14px;
+  outline: none;
+}
+
+.seqrch-input:focus, textarea:focus {
+  box-shadow: 0 0 3px 1px #99b9c9;
+}
