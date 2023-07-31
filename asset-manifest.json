@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/dZENcode_task/static/css/main.073c9b0a.css",
+    "main.js": "/dZENcode_task/static/js/main.54277093.js",
+    "index.html": "/dZENcode_task/index.html",
+    "main.073c9b0a.css.map": "/dZENcode_task/static/css/main.073c9b0a.css.map",
+    "main.54277093.js.map": "/dZENcode_task/static/js/main.54277093.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.54277093.js"
+  ]
+}
