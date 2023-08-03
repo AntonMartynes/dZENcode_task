@@ -1,0 +1,40 @@
+.product-list {
+  overflow-x: auto;
+  border-collapse: unset;
+  border-spacing: 0 5px;
+  width: 100%;
+}
+
+.item-to-delete {
+  display: flex;
+  align-items: center;
+  grid-gap: 15px;
+  gap: 15px;
+  border-color: #d7dfe2;
+  border-style: solid;
+  border-width: 1px 0 0;
+  padding: 10px 15px;
+
+  &__status {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #86be47;
+  }
+
+  &__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__sn {
+    font-size: 10px;
+    color: #8e9ba2;
+  }
+}

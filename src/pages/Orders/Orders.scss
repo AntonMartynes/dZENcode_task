@@ -1,0 +1,32 @@
+.orders {
+  width: 70vw;
+  background: '#f0f3f5',
+  
+}
+
+.orders-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.addOrderBtn {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    box-shadow: 0 0 3px 1px #99b9c9;
+  }
+}
+
+
+.orders-info-text {
+  color: #3b6574;
+  font-weight: 500;
+  font-size: 30px;
+}

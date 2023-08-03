@@ -1,0 +1,56 @@
+.modal-group {
+  position: relative;
+  border: 1px solid #d7dee2;
+  border-radius: 5px;
+  background: #fff;
+  height: fit-content;
+  min-width: 400px;
+
+  &__close-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+    border: 1px solid #d6e0e5;
+    transition: all 0.3s;
+  }
+
+  &__close-btn:hover {
+    box-shadow: 0 0 12px 3px #99b9c9;
+  }
+
+  &__header {
+    padding: 20px;
+  }
+
+  &__modal-title {
+    margin-bottom: 15px;
+  }
+
+  &__add-button {
+    width: 25px;
+    height: 25px;
+    color: white;
+    background: #8bc34a;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: ease 0.3s;
+
+    &:hover {
+      box-shadow: 0 0 12px 3px #99b9c9;
+    }
+  }
+
+  &__add-text {
+    color: #8bc34a;
+  }
+}

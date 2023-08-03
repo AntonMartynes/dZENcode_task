@@ -1,0 +1,75 @@
+.ordersList {
+  border-collapse: unset;
+  border-spacing: 0 5px;
+  width: 75vw;
+  
+}
+
+.ordersList__activeModal {
+  border-collapse: unset;
+  border-spacing: 0 5px;
+  width: 45vw;
+}
+
+.modal {
+  &__content-wrapper {
+    width: 100%;
+  }
+
+  &__button-container {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    padding: 15px;
+    background: #85bd47;
+    border-radius: 0 0 5px 5px;
+  }
+
+  &__button {
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    background: #85bd47;
+    padding: 5px 10px;
+    outline-color: transparent;
+    border: transparent;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 0.3s;
+
+    &--cancel:hover {
+      background: #fff;
+      color: #8e9ba2;
+    }
+    
+    &--delete:hover {
+      background: #fff;
+      color: red;
+    }
+  }
+
+  &__button:hover {
+    box-shadow: 0 0 12px 3px #99b9c9;
+  }
+}
+
+.item-to-delete {
+  display: flex;
+  align-items: center;
+  grid-gap: 15px;
+  gap: 15px;
+  border-color: #d7dfe2;
+  border-style: solid;
+  border-width: 1px 0 0;
+  padding: 10px 15px;
+
+  &__order-name {
+    display: inline-block;
+    padding: 7px;
+    font-weight: 500;
+  }
+}
