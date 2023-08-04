@@ -10,6 +10,7 @@ import { ProductItem } from '../ProductItem';
 import './ProductList.scss';
 import monitor from '../../images/desktop.png';
 import deleteIcon from '../../images/delete.png';
+import { motion } from 'framer-motion';
 
 export const ProductList: React.FC = () => {
   const [activeModal, setActiveModal] = useState(false);
@@ -39,7 +40,12 @@ export const ProductList: React.FC = () => {
 
   return (
     <>
-      <table className="product-list">
+      <motion.table 
+        className="product-list"
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+      >
         <tbody>
           {filteredProducts.map(product => (
             <ProductItem
@@ -49,7 +55,7 @@ export const ProductList: React.FC = () => {
             />
           ))}
         </tbody>
-      </table>
+      </motion.table>
       {!filteredProducts && (
         <p>Oooooh, there is no product that you are looking…</p>
       )}

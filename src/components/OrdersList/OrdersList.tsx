@@ -9,6 +9,7 @@ import deleteIcon from '../../images/delete.png';
 import cn from 'classnames';
 import './OrdersList.scss';
 import { RootState } from '../../Redux/store';
+import { motion } from "framer-motion"
 
 type Props = {
   orders: OrderWithProducts[];
@@ -35,7 +36,12 @@ export const OrdersList: React.FC<Props> = ({ orders }) => {
 
   return (
     <>
-      <table className={cn(isModalActive ? 'ordersList__activeModal' : 'ordersList')}>
+      <motion.table 
+        className={cn(isModalActive ? 'ordersList__activeModal' : 'ordersList')}
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+      >
         <tbody>
           {orders.map(order => (
             <OrderItem
@@ -45,7 +51,7 @@ export const OrdersList: React.FC<Props> = ({ orders }) => {
             />
           ))}
         </tbody>
-      </table>
+      </motion.table>
 
       {activeModal && (
         <Modal onClose={() => setActiveModal(false)}>

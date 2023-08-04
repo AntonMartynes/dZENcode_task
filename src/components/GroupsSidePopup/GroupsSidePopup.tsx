@@ -7,6 +7,7 @@ import { OrderWithProducts } from '../../types';
 import { GroupsSideContent } from '../GroupsSideContent';
 import './GroupsSidePopup.scss';
 import closeIcon from '../../images/close-icon.png';
+import { motion } from 'framer-motion';
 
 type Props = {
   order: OrderWithProducts | undefined;
@@ -33,7 +34,12 @@ export const GroupsSidePopup: React.FC<Props> = ({ order }) => {
   }, [selectedOrder]);
 
   return (
-    <div className="modal-group">
+    <motion.div 
+      className="modal-group"
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 1 }}
+    >
       <button
         className="modal-group__close-btn"
         type="button"
@@ -67,6 +73,6 @@ export const GroupsSidePopup: React.FC<Props> = ({ order }) => {
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
